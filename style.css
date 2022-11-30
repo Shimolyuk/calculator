@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    text-shadow: 8px 8px 10px #0000008c;
+    margin-top: 10rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%239C92AC' fill-opacity='0.25' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"), linear-gradient(to right top, #343a40, #2b2c31, #211f22, #151314, #000000);
+}
+
+.calculator {
+    padding: 18px;
+    margin: 50px auto;
+    width: 300px;
+    height: 500px;
+    font-family: Arial;
+    font-family: Arial;
+    border-radius: 20px;
+    color: #fdfdfd;
+    border: 2px solid rgb(255, 255, 255);
+    display: grid;
+    box-shadow: 16px 16px 16px #717070;
+   
+}
+
+.display {
+    height: 125px;
+    padding: 10px;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.display p {
+    text-align: right;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.buttons {
+    display: grid;
+    grid-template-areas: 
+    "ac plusMinus percentage divide"
+    "seven eight nine multi"
+    "four five siz minus"
+    "one two three plus"
+    "zero zero dot equal";
+    grid-gap: 7px;
+    justify-items: center;
+    align-items: center;
+}
+
+.btn:hover {
+    filter: brightness(150%);
+}
+.btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 63px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: linear-gradient(-25deg,rgba(0,0,0,0.22),rgba(255,255,255,0.25));
+    box-shadow: 9px 9px 11px 0 rgba(0,0,0,0.25),-4px -4px 8px 0 rgba(255,255,255,0.3);
+}
+
+.background-grey {
+    background-color: #a6a6a6;
+}
+
+.background-orange {
+    background-color: #ffa221;
+}
+
+.btn.percentage {
+    grid-area: percentage;
+}
+
+.btn.zero {
+    grid-area: zero;
+    width: 100%;
+    border-radius: 27px;
+}
+
+.btn.plusMinus {
+    grid-area: plusMinus;
+}
+
+
+.btn.divide {
+    grid-area: divide;
+} 
+
